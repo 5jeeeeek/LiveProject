@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finduser.PWFindActivity3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="비밀번호 찾기"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bdbdbd"></LinearLayout>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="30dp"
+                android:textColor="#000000"
+                android:lineHeight="35dp"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="본인확인이 완료되었습니다. \n새로운 비밀번호를\n입력해주세요."/>
+
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="새 비밀번호 입력 (8 - 12자리)"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="11dp"
+                android:id="@+id/newPwText"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="30dp" />
+
+            <EditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:hint="새 비밀번호 확인 (8 - 12자리)"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textSize="11dp"
+                android:id="@+id/newPwConfirmText"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/ic_person_black_24dp"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                android:layout_marginTop="10dp" />
+
+
+            <Button
+                android:layout_width="280dp"
+                android:layout_height="38dp"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/register_btn_rounded"
+                android:text="비밀번호 변경 확인"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/pw_changeButton"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

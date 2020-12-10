@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <!--<Spinner-->
+        <!--android:layout_gravity="right"-->
+        <!--android:id="@+id/spinner1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp">-->
+
+    <!--</Spinner>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:id="@+id/bookHelpView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_drop_up" />
+
+            <TextView
+                android:id="@+id/bookHelpTextView"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="관심 도서가 없습니다!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/BookItemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorMain" />
+
+</FrameLayout>

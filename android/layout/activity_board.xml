@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".board.BoardActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorMain"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="26">
+            <ImageButton
+                android:id="@+id/btn_open"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_btn_background"
+                app:srcCompat="@drawable/ic_menu_black_24dp"/>
+
+            <TextView
+                android:id="@+id/boardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="22"
+                android:gravity="center"
+                android:text="자유게시판"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <ImageView
+
+                android:layout_weight="2"
+                android:id="@+id/boardSearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_search" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:id="@+id/helpView"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_up" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_drop_up" />
+
+                <TextView
+                    android:id="@+id/helpTextView"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="당겨서 새로고침 해주세요!"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <ProgressBar
+                android:indeterminateTint="@color/colorMain"
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:indeterminate="true" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_create"
+                app:backgroundTint="@color/colorMain" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/swipe_layout">
+
+                <ListView
+                    android:layout_above="@+id/progressBar"
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </ListView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+    <include layout="@layout/activity_drawer"></include>
+</android.support.v4.widget.DrawerLayout>

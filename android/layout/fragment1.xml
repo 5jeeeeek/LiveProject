@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:text="받는이"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관리자"
+                android:textColor="#333333"
+                android:textSize="14dp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:background="#bdbdbd">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textColor="#333333"
+                android:textSize="14dp"
+
+                />
+
+            <EditText
+                android:hint="제목을 입력해주세요."
+                android:id="@+id/adminMessageTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:backgroundTint="@color/colorMain"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:background="#bdbdbd">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="첨부파일"
+                    android:textColor="#333333"
+                    android:textSize="14dp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/noteWriteImage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/ic_attachment_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#bdbdbd" />
+
+        <EditText
+
+            android:id="@+id/adminMessageDescText"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@null"
+
+            android:backgroundTint="@color/colorMain"
+            android:gravity="top"
+            android:hint="내용을 입력해주세요."
+            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray" />
+
+
+        <Button
+            android:id="@+id/adminMessageSendButton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorMain"
+            android:text="보내기"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

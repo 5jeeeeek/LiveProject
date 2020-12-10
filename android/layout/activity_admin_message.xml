@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/adminLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AdminMessageActivity">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@color/colorMain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="26">
+
+            <ImageButton
+
+                android:id="@+id/btn_open"
+                android:layout_weight="4"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/img_btn_background"
+                app:srcCompat="@drawable/ic_menu_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="18"
+                android:gravity="center"
+                android:text="관리자 문의"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            <TextView
+                android:layout_weight="4"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text=""
+                android:textSize="18sp"
+                />
+        </LinearLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/colorMain" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/activity_drawer"></include>
+</android.support.v4.widget.DrawerLayout>

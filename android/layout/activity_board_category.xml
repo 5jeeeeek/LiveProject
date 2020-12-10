@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:gravity="center"
+
+                android:weightSum="26">
+                <ImageButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:id="@+id/btn_open"
+                    android:layout_width="4dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_menu_white" />
+
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_weight="22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="게시판"
+                    android:textColor="#494949"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#494949"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#e7e7e7">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="280dp"
+                    android:layout_height="280dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/question" />
+
+                <TextView
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:text="자신의 생각을 쓰거나,\n궁금한 것들을 물어보세요."
+                    android:textSize="17dp"/>
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:background="#e7e7e7">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginRight="40dp">
+                        <Button
+                            android:id="@+id/board1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ic_pan_tool"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="자유게시판"
+                            android:textSize="12dp"
+                            android:textColor="#000000"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+                        <Button
+                            android:id="@+id/board2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ic_live_help" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="질문게시판"
+
+                            android:textColor="#000000"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="40dp">
+                        <Button
+                            android:id="@+id/board3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ic_whatshot"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HOT 게시판"
+
+                            android:textColor="#000000"
+                            android:textSize="12dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_gravity="center"
+                    android:layout_width="380dp"
+                    android:layout_height="1dp"
+                    android:background="#e7e7e7">
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_create"
+            app:backgroundTint="@color/colorMain" />
+
+    </RelativeLayout>
+    <include layout="@layout/activity_drawer"></include>
+</android.support.v4.widget.DrawerLayout>
