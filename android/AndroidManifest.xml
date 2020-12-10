@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.app_libsys">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/liverary_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/liverary_icon"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/EditTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".signup.RegisterActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".finduser.IDFindActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".finduser.PWFindActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".finduser.PWFindActivity2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".finduser.PWFindActivity3"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".finduser.PWConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".board.BoardActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".board.BoardWriteActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".board.BoardDetailActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.MyPageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.MyInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.MyInfoPwChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.MyInfoNicknameChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.MyInfoQuestionChangeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".board.BoardUpdateActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".board.BoardSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AdminMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".note.ReceiveDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".note.SendDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DrawerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".board.BoardCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".book.BookActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".book.BookCategoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".book.BookDetailActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".notice.NoticeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".book.BookSearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".notice.NoticeDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".mypage.DevActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>
